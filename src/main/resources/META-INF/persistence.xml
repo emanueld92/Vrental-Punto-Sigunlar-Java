@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.rt_rentalcar_war_0.0.1-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.rt.rentalcar.entity.Address</class>
+    <class>com.rt.rentalcar.entity.InventoryVehicle</class>
+    <class>com.rt.rentalcar.entity.Category</class>
+    <class>com.rt.rentalcar.entity.City</class>
+    <class>com.rt.rentalcar.entity.License</class>
+    <class>com.rt.rentalcar.entity.Vehicle</class>
+    <class>com.rt.rentalcar.entity.VehicleDetails</class>
+    <class>com.rt.rentalcar.entity.Country</class>
+    <class>com.rt.rentalcar.entity.Rental</class>
+    <class>com.rt.rentalcar.entity.Staff</class>
+    <class>com.rt.rentalcar.entity.Payment</class>
+    <class>com.rt.rentalcar.entity.Customers</class>
+    <class>com.rt.rentalcar.entity.Users</class>
+    <class>com.rt.rentalcar.entity.VehicleCategory</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/v_rental"/>
+      <property name="javax.persistence.jdbc.user" value="emanueld92"/>
+      <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="vero"/>
+    </properties>
+  </persistence-unit>
+</persistence>
